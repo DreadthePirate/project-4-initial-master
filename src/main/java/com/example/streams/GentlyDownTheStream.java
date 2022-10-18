@@ -31,6 +31,7 @@ public class GentlyDownTheStream {
     // TODO - return a list of sorted fruits with all fruits filtered out that start with "A"
     public List<String> sortedFruitsException() {
         return fruits.stream()
+                     .sorted()
                      .filter(x -> !x.startsWith("A"))
                      .collect(Collectors.toList());
     }
